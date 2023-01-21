@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+.main-div{
+  background-color:rgb(230, 228, 228)
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading{
+  margin-left: 30%;
+  color: rgb(215, 123, 123) ;
+  text-shadow: 5px 5px 10px  rgb(117, 114, 114);
+  font-size: 40px
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form{
+  border: 2px solid;
+  border-radius: 20px;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  margin-left: 36%;
+  margin-top: 6%;
 }
+.input-element{
+  margin: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid;
+}
+.submit-btn{
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 30px;
+  margin-left: 72px;
+  margin-top: 45px;
+  background-color: rgb(215, 123, 123);
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.box{
+  border: 2px solid;
+  width: fit-content;
+  border-radius: 10px;
+  height: 100px;
+  padding: 10px;
+  background-color: rgb(215, 123, 123);
+}
+.flex{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-top: 75px;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ 
 }
