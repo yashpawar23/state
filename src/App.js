@@ -10,8 +10,6 @@ export default class App extends Component {
     employee:[]
   }
   
-
-
   change = (data)=>{
       this.setState({[data.target.name] : data.target.value});
        console.log(this.state)
@@ -38,10 +36,10 @@ export default class App extends Component {
             <input type="text" name='Name' className='input-element' value={this.state.Name} onChange={this.change}></input>
             <br></br>
             <label>Department :</label>
-            <input type="text"name='Department' className='input-element' value={this.state.Department}></input>
+            <input type="text"name='Department' className='input-element' value={this.state.Department} onChange={this.change}></input>
             <br></br>
             <label>Rating :</label>
-            <input type="number" name='Rating'className='input-element' value={this.state.Rating}></input>
+            <input type="number" name='Rating'className='input-element' value={this.state.Rating} onChange={this.change}></input>
             <br></br>
             <button className='submit-btn' onClick={this.submitHandler} >Click</button>
             
@@ -50,7 +48,7 @@ export default class App extends Component {
          <div className='flex'>
           {this.state.employee.map((value,index)=>{
             return(
-              <div className='box'> Name: {value.Name} | Department: {value.Department} | Rating:{value.Rating}</div>
+              <div className='box'> Name: {value.Name}  <br></br> Department: {value.Department}   <br></br> Rating:{value.Rating}</div>
             )
 
           })}
